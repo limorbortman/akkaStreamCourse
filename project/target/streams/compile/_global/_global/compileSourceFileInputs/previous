@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/home/limor/IdeaProjects/akka-streams- course/project/Dependencies.scala","6f0b1132cff0b9bc1faf1d48c87a810a00a32978"]],"lastModifiedTimes":[]}}]

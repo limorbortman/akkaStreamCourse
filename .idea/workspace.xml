@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b789b4e9-619b-46e6-add5-975c2ea93b3d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Y5DOjoayzOCwtCFdIYMDf47BFB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Playground" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="playgrond.Playground" />
+      <module name="akka-streams- course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Playground" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="akka-streams- course" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-streams-course [file:/home/limor/IdeaProjects/akka-streams-%20course/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-streams- course-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="851131411" />
+        <entry key="$PROJECT_DIR$/project/Dependencies.scala" value="1476718051" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="152" width="848" height="677" key="#Project_Structure" timestamp="1582538385867">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="588" y="152" width="848" height="677" key="#Project_Structure/67.27.1853.930@67.27.1853.930" timestamp="1582538385867" />
+    <state width="1807" height="238" key="GridCell.Tab.0.bottom" timestamp="1582542485057">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1807" height="238" key="GridCell.Tab.0.bottom/67.27.1853.930@67.27.1853.930" timestamp="1582542485057" />
+    <state width="1807" height="238" key="GridCell.Tab.0.center" timestamp="1582542485054">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1807" height="238" key="GridCell.Tab.0.center/67.27.1853.930@67.27.1853.930" timestamp="1582542485054" />
+    <state width="1807" height="238" key="GridCell.Tab.0.left" timestamp="1582542485053">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1807" height="238" key="GridCell.Tab.0.left/67.27.1853.930@67.27.1853.930" timestamp="1582542485053" />
+    <state width="1807" height="238" key="GridCell.Tab.0.right" timestamp="1582542485056">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1807" height="238" key="GridCell.Tab.0.right/67.27.1853.930@67.27.1853.930" timestamp="1582542485056" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582223541586">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582223541586" />
+  </component>
+</project>
