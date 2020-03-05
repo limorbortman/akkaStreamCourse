@@ -1,7 +1,7 @@
 package part2primer.ex
 
 import akka.stream.scaladsl.Source
-import infra.Implicits._
+import part2primer._
 
 object FirstPrinciplesEx extends App {
 

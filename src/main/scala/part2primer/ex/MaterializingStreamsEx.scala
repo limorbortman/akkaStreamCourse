@@ -1,7 +1,7 @@
 package part2primer.ex
 
 import akka.stream.scaladsl.{Flow, Keep, Sink, Source}
-import infra.Implicits._
+import part2primer._
 
 object MaterializingStreamsEx extends App {
 

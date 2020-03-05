@@ -1,7 +1,6 @@
 package part2primer
 
 import akka.stream.scaladsl.{Flow, Sink, Source}
-import infra.Implicits._
 
 import scala.concurrent.Future
 
