@@ -1,4 +1,4 @@
-package part2primer
+package part2primer.ex
 
 import akka.stream.scaladsl.Source
 import infra.Implicits._
