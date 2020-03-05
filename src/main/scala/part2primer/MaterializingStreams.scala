@@ -2,7 +2,6 @@ package part2primer
 
 import akka.stream.scaladsl.{Flow, Keep, Sink, Source}
 import infra.Implicits._
-import system.dispatcher
 
 import scala.concurrent.Future
 import scala.util.control.NonFatal
