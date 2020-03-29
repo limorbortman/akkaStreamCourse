@@ -1,7 +1,8 @@
 package part3Graphs
 
-import akka.stream.scaladsl.{Broadcast, Concat, GraphDSL, Sink, Source}
-import akka.stream.{SinkShape, SourceShape}
+import akka.NotUsed
+import akka.stream.scaladsl.{Broadcast, Concat, GraphDSL, RunnableGraph, Sink, Source, ZipWith}
+import akka.stream.{ClosedShape, SinkShape, SourceShape, UniformFanInShape}
 
 object OpenGraphs extends App {
 
@@ -48,6 +49,50 @@ object OpenGraphs extends App {
     }
   )
 
-  source1.to(sinkGraph).run()
+  //source1.to(sinkGraph).run()
+
+  /**
+   * Uniform Shape-> same types for all inputs and outputs
+   * Max 3 Operator:
+   *  - 3 inputs of type int
+   *  - push out the max of the 3
+   */
+  val max3StaticGraph = GraphDSL.create() { implicit builder =>
+    import GraphDSL.Implicits._
+
+    val max1 = builder.add(ZipWith[Int, Int, Int]((a, b) => Math.max(a, b)))
+    val max2 = builder.add(ZipWith[Int, Int, Int]((a, b) => Math.max(a, b)))
+
+    max1.out ~> max2.in0
+
+    UniformFanInShape(max2.out, max1.in0, max1.in1, max2.in1)
+  }
+
+  val source1To10 = Source(1 to 10)
+  val source5 = Source(1 to 10).map(_ => 5)
+  val sourceRevers = Source((1 to 10).reverse)
+
+  val maxSink = Sink.foreach[Int](max => println(s"Max is $max"))
+
+  val max3RunnableGraph = RunnableGraph.fromGraph(
+    GraphDSL.create() { implicit builder =>
+      import GraphDSL.Implicits._
+
+      val max3Shape = builder.add(max3StaticGraph)
+
+      source1To10 ~> max3Shape.in(0)
+      source5 ~> max3Shape.in(1)
+      sourceRevers ~> max3Shape.in(2)
+      max3Shape ~> maxSink
+
+      ClosedShape
+    }
+  ).run()
+
+  /**
+   * Non uniform shapes -> return/get different types -TBD
+   */
+
+
 
 }
